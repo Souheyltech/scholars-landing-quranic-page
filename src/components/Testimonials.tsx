@@ -6,12 +6,12 @@ const Testimonials = () => {
     <section className="py-16 bg-emerald-600">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Happy Student Testimonials
+          شهادات الطلاب السعداء
         </h2>
 
         {/* Testimonial Card */}
         <div className="max-w-2xl mx-auto mt-12">
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
+          <div className="bg-white rounded-2xl p-8 shadow-xl text-right">
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
                 <span className="text-2xl">👤</span>
@@ -25,12 +25,12 @@ const Testimonials = () => {
             </div>
 
             <blockquote className="text-lg text-slate-700 mb-6 leading-relaxed">
-              "The online Quran classes have been transformative for my spiritual journey. The instructors are knowledgeable, patient, and truly dedicated to helping students understand and recite the Quran properly. I highly recommend this program to anyone seeking authentic Islamic education."
+              "لقد كانت دروس القرآن عبر الإنترنت تحويلية لرحلتي الروحية. المدرسون مطلعون وصبورون ومتفانون حقاً في مساعدة الطلاب على فهم وتلاوة القرآن بشكل صحيح. أوصي بشدة بهذا البرنامج لأي شخص يسعى للحصول على تعليم إسلامي أصيل."
             </blockquote>
 
             <div className="border-t pt-6">
-              <p className="font-semibold text-slate-800">Ahmad Rahman</p>
-              <p className="text-slate-600 text-sm">Student, Advanced Quran Studies</p>
+              <p className="font-semibold text-slate-800">أحمد الرحمن</p>
+              <p className="text-slate-600 text-sm">طالب، دراسات القرآن المتقدمة</p>
             </div>
           </div>
         </div>

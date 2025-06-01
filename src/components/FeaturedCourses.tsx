@@ -6,32 +6,32 @@ const FeaturedCourses = () => {
   const courses = [
     {
       id: 1,
-      title: "Reading Quran Basics",
-      price: "$99.00",
+      title: "أساسيات قراءة القرآن",
+      price: "٩٩ دولار",
       rating: 4.8,
-      students: "1.2k Students",
-      duration: "8 Weeks",
-      level: "Beginner",
+      students: "١٢٠٠ طالب",
+      duration: "٨ أسابيع",
+      level: "مبتدئ",
       image: "📖"
     },
     {
       id: 2,
-      title: "Quran & Tajweed",
-      price: "$35.00",
+      title: "القرآن والتجويد",
+      price: "٣٥ دولار",
       rating: 4.9,
-      students: "956 Students", 
-      duration: "12 Weeks",
-      level: "Intermediate",
+      students: "٩٥٦ طالب", 
+      duration: "١٢ أسبوع",
+      level: "متوسط",
       image: "🎵"
     },
     {
       id: 3,
-      title: "Quran Recitation",
-      price: "$70.00",
+      title: "تلاوة القرآن",
+      price: "٧٠ دولار",
       rating: 4.7,
-      students: "2.1k Students",
-      duration: "16 Weeks", 
-      level: "Advanced",
+      students: "٢١٠٠ طالب",
+      duration: "١٦ أسبوع", 
+      level: "متقدم",
       image: "🕌"
     }
   ];
@@ -41,7 +41,7 @@ const FeaturedCourses = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-            Explore Featured <span className="text-emerald-600">Courses</span>
+            استكشف <span className="text-emerald-600">الدورات المميزة</span>
           </h2>
         </div>
 
@@ -54,41 +54,41 @@ const FeaturedCourses = () => {
               </div>
 
               {/* Course Content */}
-              <div className="p-6">
+              <div className="p-6 text-right">
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">{course.title}</h3>
                 <p className="text-2xl font-bold text-emerald-600 mb-4">{course.price}</p>
 
                 {/* Rating */}
-                <div className="flex items-center space-x-1 mb-4">
+                <div className="flex items-center justify-end space-x-1 space-x-reverse mb-4">
                   {[1,2,3,4,5].map((star) => (
                     <Star key={star} size={16} className="fill-yellow-400 text-yellow-400" />
                   ))}
-                  <span className="text-sm text-slate-600 ml-2">({course.rating})</span>
+                  <span className="text-sm text-slate-600 mr-2">({course.rating})</span>
                 </div>
 
                 {/* Course Info */}
                 <div className="space-y-2 mb-6">
-                  <div className="flex items-center text-sm text-slate-600">
-                    <Users size={16} className="mr-2" />
-                    {course.students}
+                  <div className="flex items-center justify-end text-sm text-slate-600">
+                    <span className="mr-2">{course.students}</span>
+                    <Users size={16} />
                   </div>
-                  <div className="flex items-center text-sm text-slate-600">
-                    <Clock size={16} className="mr-2" />
-                    {course.duration}
+                  <div className="flex items-center justify-end text-sm text-slate-600">
+                    <span className="mr-2">{course.duration}</span>
+                    <Clock size={16} />
                   </div>
-                  <div className="flex items-center text-sm text-slate-600">
-                    <Award size={16} className="mr-2" />
-                    {course.level}
+                  <div className="flex items-center justify-end text-sm text-slate-600">
+                    <span className="mr-2">{course.level}</span>
+                    <Award size={16} />
                   </div>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="space-y-2">
                   <Button className="w-full bg-slate-800 hover:bg-slate-900 text-white">
-                    Register Now
+                    سجل الآن
                   </Button>
                   <Button variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-50">
-                    See Details
+                    عرض التفاصيل
                   </Button>
                 </div>
               </div>
